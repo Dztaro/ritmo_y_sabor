@@ -1,0 +1,138 @@
+/* Archivo: style.css */
+
+/* Tipografía general */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background-color: #f8f9fa; /* Fondo claro */
+    margin: 0;
+    padding: 0;
+}
+
+/* Títulos */
+h1.tituloInicio {
+    color: #007bff; /* Azul Bootstrap */
+    text-align: center;
+    margin: 20px 0;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+}
+
+h2.subTituloInicio {
+    color: #6c757d; /* Gris Bootstrap */
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+}
+
+/* Navbar */
+.nav-pills .nav-link {
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.nav-pills .nav-link.active {
+    background-color: #007bff;
+    color: white;
+}
+
+.nav-pills .nav-link:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+/* Cards */
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+    color: #007bff;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.card-text {
+    color: #6c757d;
+}
+
+/* Footer */
+footer.footerInicio {
+    background-color: #343a40; /* Negro Bootstrap */
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    h1.tituloInicio {
+        font-size: 2rem;
+    }
+
+    h2.subTituloInicio {
+        font-size: 1.5rem;
+    }
+}
+
+
+/* Estilo para la sección "Nosotros" */
+main.nosotrosSection {
+    font-family: 'Lora', serif;
+    color: #333;
+    background-color: #f8f9fa; /* Fondo suave */
+    padding: 40px 20px;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+/* Estilo para el título */
+main.nosotrosSection h2 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 2rem;
+    color: #007bff; /* Azul vibrante */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+/* Estilo para el texto */
+main.nosotrosSection p {
+    text-align: justify;
+    line-height: 1.8; /* Espaciado entre líneas */
+    font-size: 1.1rem;
+    margin: 0 auto;
+    max-width: 800px; /* Limitar ancho para mejor lectura */
+}
+
+/* Centrar el mapa */
+.nosotrosSection iframe {
+    display: block;
+    margin: 20px auto; /* Centra horizontalmente */
+    border: 5px solid #007bff; /* Opcional: Bordes decorativos */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+}
+
+/* Opcional: Añadir un contenedor y centrar verticalmente */
+.nosotrosSection {
+    text-align: center; /* Asegura que los textos también se alineen */
+    padding: 20px;
+}
+
+.nosotrosSection iframe {
+    width: 100%; /* Ocupa el ancho del contenedor */
+    max-width: 600px; /* No supera el tamaño original */
+    height: auto; /* Ajusta la altura proporcionalmente */
+}
+
+
