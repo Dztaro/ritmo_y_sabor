@@ -4,14 +4,16 @@
 body {
     font-family: 'Roboto', sans-serif;
     color: #333;
-    background-color: #f8f9fa; /* Fondo claro */
+    background-color: #f8f9fa;
+    /* Fondo claro */
     margin: 0;
     padding: 0;
 }
 
 /* Títulos */
 h1.tituloInicio {
-    color: #007bff; /* Azul Bootstrap */
+    color: #007bff;
+    /* Azul Bootstrap */
     text-align: center;
     margin: 20px 0;
     text-transform: uppercase;
@@ -19,7 +21,8 @@ h1.tituloInicio {
 }
 
 h2.subTituloInicio {
-    color: #6c757d; /* Gris Bootstrap */
+    color: #6c757d;
+    /* Gris Bootstrap */
     text-align: center;
     margin-bottom: 30px;
     font-size: 1.8rem;
@@ -66,7 +69,8 @@ h2.subTituloInicio {
 
 /* Footer */
 footer.footerInicio {
-    background-color: #343a40; /* Negro Bootstrap */
+    background-color: #343a40;
+    /* Negro Bootstrap */
     color: white;
     padding: 15px 0;
     text-align: center;
@@ -89,10 +93,13 @@ footer.footerInicio {
 main.nosotrosSection {
     font-family: 'Lora', serif;
     color: #333;
-    background-color: #f8f9fa; /* Fondo suave */
+    background-color: #f8f9fa;
+    /* Fondo suave */
     padding: 40px 20px;
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    border-radius: 10px;
+    /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra */
 }
 
 /* Estilo para el título */
@@ -100,7 +107,8 @@ main.nosotrosSection h2 {
     text-align: center;
     font-weight: 700;
     font-size: 2rem;
-    color: #007bff; /* Azul vibrante */
+    color: #007bff;
+    /* Azul vibrante */
     margin-bottom: 20px;
     text-transform: uppercase;
 }
@@ -108,31 +116,39 @@ main.nosotrosSection h2 {
 /* Estilo para el texto */
 main.nosotrosSection p {
     text-align: justify;
-    line-height: 1.8; /* Espaciado entre líneas */
+    line-height: 1.8;
+    /* Espaciado entre líneas */
     font-size: 1.1rem;
     margin: 0 auto;
-    max-width: 800px; /* Limitar ancho para mejor lectura */
+    max-width: 800px;
+    /* Limitar ancho para mejor lectura */
 }
 
 /* Centrar el mapa */
 .nosotrosSection iframe {
     display: block;
-    margin: 20px auto; /* Centra horizontalmente */
-    border: 5px solid #007bff; /* Opcional: Bordes decorativos */
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+    margin: 20px auto;
+    /* Centra horizontalmente */
+    border: 5px solid #007bff;
+    /* Opcional: Bordes decorativos */
+    border-radius: 10px;
+    /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra opcional */
 }
 
 /* Opcional: Añadir un contenedor y centrar verticalmente */
 .nosotrosSection {
-    text-align: center; /* Asegura que los textos también se alineen */
+    text-align: center;
+    /* Asegura que los textos también se alineen */
     padding: 20px;
 }
 
 .nosotrosSection iframe {
-    width: 100%; /* Ocupa el ancho del contenedor */
-    max-width: 600px; /* No supera el tamaño original */
-    height: auto; /* Ajusta la altura proporcionalmente */
+    width: 100%;
+    /* Ocupa el ancho del contenedor */
+    max-width: 600px;
+    /* No supera el tamaño original */
+    height: auto;
+    /* Ajusta la altura proporcionalmente */
 }
-
-
