@@ -1,154 +1,122 @@
-/* Archivo: style.css */
-
-/* Tipografía general */
+/* General Styles */
 body {
     font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
     color: #333;
-    background-color: #f8f9fa;
-    /* Fondo claro */
     margin: 0;
     padding: 0;
+    background-color: #f9f9f9;
 }
 
-/* Títulos */
-h1.tituloInicio {
-    color: #007bff;
-    /* Azul Bootstrap */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    color: #1a73e8;
+}
+
+a {
+    text-decoration: none;
+    color: #1a73e8;
+}
+
+a:hover {
+    color: #0a53a1;
+}
+
+/* Header */
+header {
+    background-color: #333;
+}
+
+header .nav-link {
+    font-weight: 700;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header .nav-link:hover {
+    background-color: #1a73e8;
+    color: #fff;
+    border-radius: 5px;
+}
+
+
+/* Section: Novedades */
+section {
+    padding: 2rem 1rem;
+}
+
+section h2 {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
     text-align: center;
-    margin: 20px 0;
-    text-transform: uppercase;
-    font-size: 2.5rem;
 }
 
-h2.subTituloInicio {
-    color: #6c757d;
-    /* Gris Bootstrap */
-    text-align: center;
-    margin-bottom: 30px;
-    font-size: 1.8rem;
-}
-
-/* Navbar */
-.nav-pills .nav-link {
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-}
-
-.nav-pills .nav-link.active {
-    background-color: #007bff;
-    color: white;
-}
-
-.nav-pills .nav-link:hover {
-    background-color: #0056b3;
-    color: white;
-}
-
-/* Cards */
 .card {
     border: none;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .card-title {
-    color: #007bff;
-    font-size: 1.3rem;
-    font-weight: bold;
+    font-size: 1.25rem;
+    font-weight: 700;
 }
 
 .card-text {
-    color: #6c757d;
+    color: #555;
+}
+
+/* CTA Banner */
+.bg-primary {
+    background-color: #333 !important;
+}
+
+.bg-primary h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.bg-primary .btn {
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 0.7rem 1.5rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.bg-primary .btn:hover {
+    background-color: #0a53a1;
+    color: #fff;
 }
 
 /* Footer */
-footer.footerInicio {
-    background-color: #343a40;
-    /* Negro Bootstrap */
-    color: white;
-    padding: 15px 0;
-    text-align: center;
+footer {
+    background-color: #333;
+    color: #fff;
     font-size: 0.9rem;
 }
 
-/* Responsividad */
+/* Responsive Design */
 @media (max-width: 768px) {
-    h1.tituloInicio {
-        font-size: 2rem;
+    .carousel-inner img {
+        height: 250px;
     }
 
-    h2.subTituloInicio {
+    h2 {
         font-size: 1.5rem;
     }
+
+    .bg-primary h3 {
+        font-size: 1.5rem;
+    }
+
+    .bg-primary .btn {
+        font-size: 0.9rem;
+    }
 }
 
-
-/* Estilo para la sección "Nosotros" */
-main.nosotrosSection {
-    font-family: 'Lora', serif;
-    color: #333;
-    background-color: #f8f9fa;
-    /* Fondo suave */
-    padding: 40px 20px;
-    border-radius: 10px;
-    /* Bordes redondeados */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    /* Sombra */
-}
-
-/* Estilo para el título */
-main.nosotrosSection h2 {
-    text-align: center;
-    font-weight: 700;
-    font-size: 2rem;
-    color: #007bff;
-    /* Azul vibrante */
-    margin-bottom: 20px;
-    text-transform: uppercase;
-}
-
-/* Estilo para el texto */
-main.nosotrosSection p {
-    text-align: justify;
-    line-height: 1.8;
-    /* Espaciado entre líneas */
-    font-size: 1.1rem;
-    margin: 0 auto;
-    max-width: 800px;
-    /* Limitar ancho para mejor lectura */
-}
-
-/* Centrar el mapa */
-.nosotrosSection iframe {
-    display: block;
-    margin: 20px auto;
-    /* Centra horizontalmente */
-    border: 5px solid #007bff;
-    /* Opcional: Bordes decorativos */
-    border-radius: 10px;
-    /* Bordes redondeados */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    /* Sombra opcional */
-}
-
-/* Opcional: Añadir un contenedor y centrar verticalmente */
-.nosotrosSection {
-    text-align: center;
-    /* Asegura que los textos también se alineen */
-    padding: 20px;
-}
-
-.nosotrosSection iframe {
-    width: 100%;
-    /* Ocupa el ancho del contenedor */
-    max-width: 600px;
-    /* No supera el tamaño original */
-    height: auto;
-    /* Ajusta la altura proporcionalmente */
-}
