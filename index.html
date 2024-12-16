@@ -1,83 +1,70 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="es">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Inicio | Ritmo & Sabor</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ritmo & Sabor - Bebidas Premium</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <!-- Header -->
-    <header class="bg-dark py-3">
-        <div class="container">
-            <ul class="nav nav-pills nav-justified">
-                <li class="nav-item">
-                    <a class="nav-link text-white active" href="./index.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="./pages/productos.html">Productos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="./pages/nosotros.html">Nosotros</a>
-                </li>
-            </ul>
+
+    <!-- Sección Principal -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Las mejores bebidas premium, solo para ti.</h1>
+            <p>Descubre el sabor único de todas las bebidas, donde cada botella cuenta una historia.</p>
+            <a href="pages/productos.html" class="btn-cta">Ver Productos</a>
         </div>
     </header>
 
-    <!-- Sección de novedades -->
-    <section class="container mt-5">
-        <h2 class="text-center text-primary">Últimas Novedades</h2>
-        <div class="row g-4">
-            <div class="col-md-4">
-                <div class="card shadow-sm">
-                    <img src="./image/fernetConCocaCola.jpg" class="card-img-top" alt="Fernet y Coca Cola">
-                    <div class="card-body">
-                        <h5 class="card-title">Combo Branca</h5>
-                        <p class="card-text">Fernet 750ml <br> Coca Cola 1,75L x 2 <br> </p>
-                        <a href="./pages/productos.html" class="btn btn-primary">Ver más</a>
+    <!-- Sección de Productos Destacados -->
+    <section id="productos" class="productos py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Productos Destacados</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="producto">
+                        <img src="image/federico-alvear-extra-dulce-750-ml.webp"
+                            alt="Federico Alvear Unlimited Extra Dulce 750ml" class="img-fluid">
+                        <h3>Federico Alvear Unlimited Extra Dulce</h3>
+                        <p>750 ml - Un espumante de sabor único.</p>
+                        <a href="pages/federico-alvear-extra-dulce.html" class="btn-cta">Ver más</a>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card shadow-sm">
-                    <img src="./image/cervezaBrahma.webp" class="card-img-top" alt="Latas de Cerveza Brahma">
-                    <div class="card-body">
-                        <h5 class="card-title">Nuevo Producto</h5>
-                        <p class="card-text">Pack de Brahma x 6 und. de 473ml <br> </p>
-                        <a href="./pages/productos.html" class="btn btn-primary">Ver más</a>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="producto">
+                        <img src="image/fernet-750-ml.webp" alt="Fernet Branca 750ml" class="img-fluid">
+                        <h3>Fernet Branca</h3>
+                        <p>750 ml - Licor amargo italiano.</p>
+                        <a href="pages/fernet-branca-750-ml.html" class="btn-cta">Ver más</a>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card shadow-sm">
-                    <img src="./image/smirnoffConSpeed.jpg" class="card-img-top" alt="Smirnoff y Speed">
-                    <div class="card-body">
-                        <h5 class="card-title">Combo Smirnoff S</h5>
-                        <p class="card-text">Smirnoff 700ml <br> Speed 473ml x 2 <br> </p>
-                        <a href="./pages/productos.html" class="btn btn-primary">Ver más</a>
-                    </div>
-                </div>
+                <!-- Repetir el bloque para más productos -->
             </div>
         </div>
     </section>
 
-    <!-- CTA -->
-    <div class="bg-primary text-white text-center py-4 mt-5">
-        <h3>¿Listo para disfrutar?</h3>
-        <a href="./pages/productos.html" class="btn btn-light mt-2">Explora nuestros productos</a>
-    </div>
+    <!-- Sección sobre la marca -->
+    <section id="nosotros" class="nosotros py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Sobre Nosotros</h2>
+            <p class="text-center">Ritmo & Sabor es una marca que nace con el objetivo de ofrecer productos premium, de
+                la más alta calidad, con un sabor único que hará de cada brindis, juntada o fiesta un momento especial.
+            </p>
+            <a href="pages/nosotros.html" class="btn-cta">Conoce más</a>
+        </div>
+    </section>
 
-    <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-3 mt-5">
-        &copy; 2024 Ritmo & Sabor. Todos los derechos reservados.
+    <!-- Pie de Página -->
+    <footer class="footer py-4">
+        <div class="container text-center">
+            <p>&copy; 2024 Ritmo & Sabor. Todos los derechos reservados.</p>
+        </div>
     </footer>
 
-    <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ZEKmlN1FM8mBFs93whVCaow7ZnK3rZhFsEZzOEKo6nYgtJXHcLaFyfchK8CbkJ2E" crossorigin="anonymous"></script>
 </body>
 
 </html>

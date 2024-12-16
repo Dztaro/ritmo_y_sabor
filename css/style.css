@@ -1,122 +1,313 @@
-/* General Styles */
-body {
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.6;
-    color: #333;
+/* Reset de márgenes y padding */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
+    box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-weight: 700;
-    color: #1a73e8;
+/* Fuente */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background: linear-gradient(135deg, #f7f7f7, #e0e0e0);
+    /* Degradado de fondo */
+    line-height: 1.6;
 }
 
-a {
-    text-decoration: none;
-    color: #1a73e8;
-}
-
-a:hover {
-    color: #0a53a1;
-}
-
-/* Header */
+/* Sección del header */
 header {
-    background-color: #333;
+    background-color: #000;
+    padding: 20px 0;
+    color: white;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-header .nav-link {
-    font-weight: 700;
+header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav a {
+    text-decoration: none;
+    color: white;
+    margin: 0 30px;
+    font-weight: 600;
     font-size: 1.1rem;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: color 0.3s ease;
 }
 
-header .nav-link:hover {
-    background-color: #1a73e8;
-    color: #fff;
-    border-radius: 5px;
+header nav a:hover {
+    color: #f4c542;
 }
 
-
-/* Section: Novedades */
-section {
-    padding: 2rem 1rem;
+/* Sección Hero */
+.hero {
+    background-image: url('assets/images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 0 20px;
+    position: relative;
 }
 
-section h2 {
-    margin-bottom: 1.5rem;
-    font-size: 2rem;
+.hero h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+.hero .btn-cta {
+    background-color: #f4c542;
+    color: #1e1e1e;
+    padding: 14px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.hero .btn-cta:hover {
+    background-color: #e1b237;
+    transform: translateY(-3px);
+}
+
+/* Productos Section */
+#productos {
+    background-color: #fff;
+    padding: 80px 0;
+}
+
+.productos .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.productos h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    text-align: center;
+    font-weight: 600;
+}
+
+/* Estilo para los productos - imagen más pequeña */
+.producto {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    overflow: hidden;
+    margin-bottom: 40px;
+    width: 100%;
+    /* Imagen más pequeña */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.producto img {
+    width: 60%;
+    /* Imagen más pequeña */
+    margin: 0 auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.producto img:hover {
+    transform: scale(1.05);
+}
+
+.producto h3 {
+    font-size: 1.8rem;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.producto p {
+    font-size: 1rem;
+    margin: 15px 0;
+    color: #777;
+}
+
+.producto .btn-cta {
+    margin-top: 20px;
+    display: inline-block;
+    background-color: #f4c542;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #1e1e1e;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.producto .btn-cta:hover {
+    background-color: #e1b237;
+}
+
+/* Crear una fila de 2 productos */
+.productos .row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+/* Sección Nosotros */
+#nosotros {
+    background-color: #f7f7f7;
+    padding: 80px 0;
+}
+
+.nosotros h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.nosotros p {
+    font-size: 1.2rem;
+    text-align: center;
+    color: #777;
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+/* Sección Productos Individuales */
+/* Sección Productos Individuales */
+.producto-individual {
+    background-color: #fff;
+    padding: 80px 0;
+    display: flex;
+    justify-content: center;
+    /* Centra el contenido horizontalmente */
+    align-items: center;
+    /* Centra el contenido verticalmente */
+    flex-direction: column;
+    /* Asegura que los elementos estén en columna */
+    text-align: center;
+    /* Centra el texto */
+}
+
+.producto-individual .container {
+    max-width: 1200px;
+    width: 100%;
+    /* Asegura que el contenedor ocupe el 100% del ancho disponible */
+    display: flex;
+    flex-direction: column;
+    /* Asegura la disposición en columna */
+    justify-content: center;
+    align-items: center;
+    /* Centra todos los elementos dentro del contenedor */
+}
+
+.producto-individual img {
+    width: 50%;
+    /* Imagen más pequeña para productos individuales */
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+    margin-bottom: 30px;
+    /* Añade espacio debajo de la imagen */
+}
+
+.producto-individual img:hover {
+    transform: scale(1.05);
+}
+
+.producto-individual h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-top: 30px;
     text-align: center;
 }
 
-.card {
-    border: none;
-    border-radius: 8px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+.producto-individual ul {
+    list-style-type: none;
+    margin-top: 30px;
+    padding: 0;
 }
 
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+.producto-individual ul li {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #777;
 }
 
-.card-title {
-    font-size: 1.25rem;
-    font-weight: 700;
+.producto-individual .btn-cta {
+    margin-top: 40px;
+    display: inline-block;
+    padding: 14px 30px;
+    background-color: #f4c542;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #1e1e1e;
+    text-decoration: none;
+    transition: all 0.3s ease;
 }
 
-.card-text {
-    color: #555;
+.producto-individual .btn-cta:hover {
+    background-color: #e1b237;
+    transform: translateY(-3px);
 }
 
-/* CTA Banner */
-.bg-primary {
-    background-color: #333 !important;
-}
-
-.bg-primary h3 {
-    font-size: 1.8rem;
-    font-weight: 700;
-}
-
-.bg-primary .btn {
-    font-size: 1rem;
-    font-weight: 700;
-    padding: 0.7rem 1.5rem;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.bg-primary .btn:hover {
-    background-color: #0a53a1;
-    color: #fff;
-}
 
 /* Footer */
-footer {
-    background-color: #333;
-    color: #fff;
-    font-size: 0.9rem;
+.footer {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 30px;
 }
 
-/* Responsive Design */
+.footer p {
+    font-size: 1rem;
+}
+
+/* Media Queries */
 @media (max-width: 768px) {
-    .carousel-inner img {
-        height: 250px;
+    .hero h1 {
+        font-size: 2.5rem;
     }
 
-    h2 {
+    .productos h2 {
+        font-size: 2rem;
+    }
+
+    .producto h3 {
         font-size: 1.5rem;
     }
 
-    .bg-primary h3 {
-        font-size: 1.5rem;
+    .producto-individual h2 {
+        font-size: 2rem;
     }
 
-    .bg-primary .btn {
-        font-size: 0.9rem;
+    .producto-individual img {
+        width: 80%;
+        /* Imagen más pequeña en dispositivos móviles */
+    }
+
+    /* Fila de 2 productos en dispositivos móviles */
+    .productos .row {
+        grid-template-columns: 1fr;
+        /* Una columna en móviles */
     }
 }
-
